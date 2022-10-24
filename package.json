@@ -1,14 +1,14 @@
 {
-  "name":"hacktal",
-  "version":"0.1.0",
+  "name": "hacktal",
+  "version": "0.1.0",
   "dependencies": {
-    "@frctl/fractal":"^1.5.14"
+    "@frctl/fractal": "^1.5.14"
   },
   "devDependencies": {
-    "prettier":"^2.7.1"
+    "prettier": "^2.7.1"
   },
   "scripts": {
-    "fractal:start":"fractal start --sync",
-    "fractal:build":"fractal build"
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
   }
 }
