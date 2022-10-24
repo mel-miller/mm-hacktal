@@ -14,6 +14,14 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 // Set build directory.
 fractal.web.set('builder.dest', __dirname + '/build');
 
+// Theme customization.
+const mandelbrot = require('@frctl/mandelbrot');
+const mmTheme = mandelbrot({
+  skin: 'black',
+});
+
+fractal.web.theme(mmTheme);
+
 // Define component statuses.
 fractal.components.set('statuses', {
   ready: {
