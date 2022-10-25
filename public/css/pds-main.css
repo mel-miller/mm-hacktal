@@ -1,0 +1,12 @@
+.pds-button {
+  background-color: #194254;
+  color: white;
+  border: 1px solid #194254;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.pds-button--secondary {
+  background-color: white;
+  color: #194254;
+}

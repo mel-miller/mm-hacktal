@@ -1,0 +1,13 @@
+title: Buttons
+status: draft
+collated: true
+context:
+variants:
+  - name: 'default'
+    label: Primary
+    context:
+      content: 'Primary'
+  - name: 'Secondary'
+    context:
+      content: 'Secondary'
+      modifier: 'secondary'

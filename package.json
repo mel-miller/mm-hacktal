@@ -2,7 +2,8 @@
   "name": "hacktal",
   "version": "0.1.0",
   "dependencies": {
-    "@frctl/fractal": "^1.5.14"
+    "@frctl/fractal": "^1.5.14",
+    "@frctl/twig": "^1.2.13"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
