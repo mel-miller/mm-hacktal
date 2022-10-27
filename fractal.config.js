@@ -9,12 +9,12 @@ fractal.set('project.title', 'Hacktal');
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 // Configure components.
-fractal.components.set('path', path.join(__dirname, 'components'));
+fractal.components.set('path', path.join(__dirname, 'src/components'));
 fractal.components.engine(twigAdapter);
 fractal.components.set('ext', '.twig');
 
 // Configure docs.
-fractal.docs.set('path', path.join(__dirname, 'docs'));
+fractal.docs.set('path', path.join(__dirname, 'src/docs'));
 
 // Set build directory.
 fractal.web.set('builder.dest', __dirname + '/build');
