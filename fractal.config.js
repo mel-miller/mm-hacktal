@@ -3,9 +3,10 @@
 const path = require('path');
 const fractal = (module.exports = require('@frctl/fractal').create());
 const twigAdapter = require('@frctl/twig')();
+const versionTag = require('./package.json').version;
 
 // Global config.
-fractal.set('project.title', 'Hacktal');
+fractal.set('project.title', 'Fractal demo for Hackathon 2022');
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
 // Configure components.
@@ -23,6 +24,29 @@ fractal.web.set('builder.dest', __dirname + '/build');
 const mandelbrot = require('@frctl/mandelbrot');
 const mmTheme = mandelbrot({
   skin: 'black',
+  nav: ['search', 'information', 'docs', 'components'],
+  format: 'yaml',
+  labels: {
+    info: 'About',
+    panels: {
+      view: 'Twig',
+    },
+  },
+  information: [
+    {
+      label: 'Version',
+      type: 'version',
+      value: versionTag,
+    },
+    {
+      label: 'Updated',
+      value: new Date(),
+      type: 'time',
+      format: (value) => {
+        return value.toLocaleDateString('en');
+      },
+    },
+  ],
 });
 
 fractal.web.theme(mmTheme);

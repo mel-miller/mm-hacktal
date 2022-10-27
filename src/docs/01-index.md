@@ -2,4 +2,6 @@
 title: Hacktal
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.md`
+This is a demo instance of Fractal that uses Twig as the template engine.
+
+Learn more about [Fractal](https://fractal.build/).
