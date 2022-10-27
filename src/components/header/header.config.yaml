@@ -1,0 +1,13 @@
+title: Header
+status: ready
+collated: false
+context:
+variants:
+  - name: 'default'
+    label: Logged In
+    context:
+      logged_in: true
+      user: 'Jane Doe'
+  - name: 'Logged Out'
+    context:
+      logged_in: false
