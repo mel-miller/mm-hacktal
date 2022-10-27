@@ -1,6 +1,6 @@
 title: Button
 status: draft
-collated: false
+collated: true
 context:
 variants:
   - name: 'default'

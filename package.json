@@ -6,9 +6,12 @@
     "@frctl/twig": "^1.2.13"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "prettier": "^2.7.1"
   },
   "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
     "fractal:start": "fractal start --sync",
     "fractal:build": "fractal build"
   }

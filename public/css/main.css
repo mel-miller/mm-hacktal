@@ -1,0 +1,29 @@
+.fractal-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 2px solid #006e99;
+  border-radius: 6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.25rem;
+  line-height: 1;
+  color: white;
+  background-color: #006e99;
+}
+
+.fractal-button--secondary {
+  color: #006e99;
+  background-color: transparent;
+}
+
+.fractal-button:hover {
+  color: white;
+  background-color: #014864;
+  border-color: #014864;
+}
+
+.fractal-button:focus {
+  outline: 2px solid #006e99;
+  outline-offset: 3px;
+}
